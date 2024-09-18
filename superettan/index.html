@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Superettan Resa 2025</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="banner">
+            <img src="superettan-logo2.jpg" alt="Superettan Resa 2025 Banner">
+        </div>
+        
+    </header>
+
+    <main>
+        <!-- Månadsinsättning sektion -->
+        <section>
+            <h1> Superettans hemliga-resan klubb</h1>   
+
+
+
+<div class="title">
+    <div class="container">
+        <img src="Bild1.png" alt="Ölglas" class="beer-glass" width="100px">
+    </div>
+
+        <p>Tjena gänget!
+
+            Jag och Johannes har kommit på en idé som vi tror skulle vara riktigt kul för Superettan – att införa en årlig resa där alla som vill hänger med! Tanken är att vi går ihop två och två, och ett par har varje år ansvaret för att fixa destination, boka transport, hotell och aktivitet över en (lång)helg. Resmålet och planen hålls hemligt för resten av gruppen fram till avresan för extra spänning! 🎉
+            
+            För att göra det smidigt kan vi köra på månadsinsättningar så att vi har en gemensam budget att utgå ifrån.
+            
+            En viktig sak är att de som vill vara med måste vara beredda att engagera sig helhjärtat. När det är ens tur att vara ansvarig för en resa får man inte banga.
+            Om det låter intressant får ni anmäla er och tycka till om vad månadsinsättningen skulle kunna vara! 🍻✈️</p>
+            
+    <div class="container">
+        <img src="Bild1.png" alt="Ölglas" class="beer-glass" width="100px">
+    </div>
+</div>
+
+           
+            <h2>Välj din månadsinsättning</h2>
+            <p>Använd slidern för att välja hur mycket du vill sätta in varje månad:</p>
+            <div class="slider-container">
+                <input type="range" id="monthlyContribution" min="0" max="500" step="100" value="0" oninput="updateContribution()">
+                <span id="selectedAmount">0 kr</span>
+            </div>
+            <p>Total resebudget per år: <span id="totalAmount">0 kr</span></p>
+        </section>
+
+        <!-- Anmälning sektion -->
+        <div class="container1">
+            <h1>Anmäl dig till klubben</h1>
+            <iframe src="https://forms.gle/FYnEicbN2GgsAcEh7" width="640" height="480" frameborder="0" marginheight="0" marginwidth="0">Laddar...</iframe>
+        </div>
+
+        <!-- Nedräkning sektion -->
+        <section>
+            <h2>Nedräkning till resan</h2>
+            <p>Tid kvar till den årliga resan: <span id="countdown"></span></p>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>

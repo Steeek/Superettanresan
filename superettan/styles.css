@@ -1,0 +1,176 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #003300;
+    color: white;
+    text-align: center;
+}
+
+header {
+    margin-bottom: 40px;
+}
+
+.title {
+    display: flex;
+    flex-direction: row;
+    width: 80%;
+    margin: auto;
+}
+
+.banner {
+        position: relative;
+        width: 100%;
+        height: 200px;
+        overflow: hidden;
+    }
+
+
+.banner img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0.9;
+    animation: pulse 3s infinite;
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+        opacity: 0.9;
+    }
+    50% {
+        transform: scale(1.05);
+        opacity: 1;
+    }
+    100% {
+        transform: scale(1);
+        opacity: 0.9;
+    }
+}
+
+h1 {
+    color: #FFFF00;
+    font-size: 36px;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-shadow: 3px 3px 5px #000;
+}
+
+h2 {
+    color: #FFFF00;
+    margin-top: 20px;
+    font-size: 24px;
+}
+
+
+
+.slider-container {
+    margin: 20px 0;
+}
+
+.container1 {
+    margin-top: 40px;
+}
+
+
+
+#countdown {
+    font-size: 20px;
+    color: #FFFF00;
+}
+
+
+
+/* För action: animation för nedräkningen */
+@keyframes blink {
+    0% { opacity: 1; }
+    50% { opacity: 0.5; }
+    100% { opacity: 1; }
+}
+
+#countdown {
+    animation: blink 1s infinite;
+}
+
+/* styles.css */
+
+
+.container {
+    perspective: 1000px;
+}
+
+.beer-glass {
+    width: 50px;
+    animation: spin 5s linear infinite;
+}
+
+@keyframes spin {
+    from {
+        transform: rotateY(0deg);
+    }
+    to {
+        transform: rotateY(360deg);
+    }
+}
+
+
+@media (max-width: 768px) {
+    .beer-glass {
+        width: 40px; /* Mindre storlek på mindre skärmar */
+    }
+}
+
+@media (max-width: 480px) {
+    .beer-glass {
+        width: 30px; /* Ytterligare minskad storlek på mycket små skärmar */
+    }
+}
+
+    p {
+        font-size: smaller;
+    }
+
+
+
+
+@keyframes spin {
+    from {
+        transform: rotateY(0deg);
+    }
+    to {
+        transform: rotateY(360deg);
+    }
+}
+
+input[type="range"] {
+    -webkit-appearance: none; /* Tar bort standardutseendet på webkit-browsers */
+    width: 50%;
+    height: 8px; /* Höjd på spåret */
+    background: #f0f0f0; /* Färg på spåret */
+    border-radius: 5px; /* Rundade hörn på spåret */
+    outline: none; /* Tar bort den blå ramen vid fokusering */
+}
+
+input[type="range"]::-webkit-slider-thumb {
+    -webkit-appearance: none; /* Tar bort standardutseendet på thumb */
+    width: 20px; /* Bredd på thumb */
+    height: 20px; /* Höjd på thumb */
+    background: yellow; /* Gul färg för thumb */
+    cursor: pointer; /* Muspekare ändras till pekare när den är över thumb */
+    border-radius: 50%; /* Rundar av thumb */
+}
+
+input[type="range"]::-moz-range-thumb {
+    width: 20px; /* Bredd på thumb */
+    height: 20px; /* Höjd på thumb */
+    background: #FFA257; /* Gul färg för thumb */
+    cursor: pointer; /* Muspekare ändras till pekare när den är över thumb */
+    border-radius: 50%; /* Rundar av thumb */
+}
